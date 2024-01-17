@@ -48,6 +48,18 @@ class Sigmoid(ActivationFunction):
 
 
 def getActivationFunction(name):
+    """
+    Returns an instance of the activation function based on the given name.
+
+    Parameters:
+    name (str): The name of the activation function.
+
+    Returns:
+    object: An instance of the activation function.
+
+    Raises:
+    Exception: If the given name is not recognized.
+    """
     if name == "relu":
         return Relu()
     elif name == "linear":
